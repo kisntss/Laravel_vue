@@ -17,14 +17,14 @@ class EmployeesController extends Controller
     {
         return new EmployeeResource(Employee::with(['company'])->get());
     }
-
+    // show all companies
     public function show($id)
     {
         $employee = Employee::with(['company'])->findOrFail($id);
 
         return new EmployeeResource($employee);
     }
-
+    // save the company name
     public function store(StoreEmployeesRequest $request)
     {
         $employee = Employee::create($request->all());

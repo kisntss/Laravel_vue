@@ -11,10 +11,3 @@
 - Run __php artisan serve__
 - That's it - load the homepage, and log in with credentials __admin@admin.com__ / __password__.
 
----
-
-### License
-
-Please use and re-use however you want.
-
----

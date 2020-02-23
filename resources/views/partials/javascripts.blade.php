@@ -1,6 +1,7 @@
 {{-- Dependencies --}}
 <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
 <script src="{{ url('adminlte/js') }}/bootstrap.min.js"></script>
+
 {{-- AdminLTE --}}
 <script src="{{ url('adminlte/js/app.min.js') }}"></script>
 

@@ -37,7 +37,6 @@ class User extends Authenticatable
             $this->attributes['password'] = app('hash')->needsRehash($input) ? Hash::make($input) : $input;
     }
     
-
     /**
      * Set to null if empty
      * @param $input
@@ -52,9 +51,6 @@ class User extends Authenticatable
         return $this->belongsTo(Role::class, 'role_id');
     }
     
-    
-    
-
     public function sendPasswordResetNotification($token)
     {
        $this->notify(new ResetPassword($token));
